@@ -1,65 +1,108 @@
-# Phase 1 Project
+# Microsoft Movie GENRE Analysis
 
-You've made it all the way through the first phase of this course - take a minute to celebrate your awesomeness!
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project/master/awesome.gif)
 
-Now you will put your new skills to use with a large end-of-Phase project! This project should take 20 to 30 hours to complete.
+# INTRODUCTION
+This projects is aimed at performing an analysis for Microsoft with a view to advise the company in what type of Movies to invest in as they venture into movie production. The analysis explores data provided, but pays emphasis on data that have relationship to movie genres as the focus of the analysis revolves around "types of films". The objective is to analyse the data with enough visualizations and make recommendations to the company
 
-## Project Overview
+## BUSINESS QUESTIONS
 
-For this project, you will use exploratory data analysis to generate insights for a business stakeholder.
+As stated in the above we are charged with exploring what types of films are currently doing the best at the box office.
 
-### Business Problem
+In this regards we have formulated the following questions that will aid in delivering that mandate:
 
-Microsoft sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t know anything about creating movies. You are charged with exploring what types of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
+i. What are the most popular genres?
 
-### The Data
+ii: What are the most profitable genres to invest in?
 
-In the folder `zippedData` are movie datasets from:
+iii:What Genres Has the Highest Ratings?
 
-* [Box Office Mojo](https://www.boxofficemojo.com/)
-* [IMDB](https://www.imdb.com/)
-* [Rotten Tomatoes](https://www.rottentomatoes.com/)
-* [TheMovieDB](https://www.themoviedb.org/)
-* [The Numbers](https://www.the-numbers.com/)
+iv. What Genres have the highest Gross Profit
 
-It is up to you to decide what data from this to use and how to use it. If you want to make this more challenging, you can scrape websites or make API calls to get additional data. If you are feeling overwhelmed or behind (e.g. struggled with the Phase 1 Code Challenge), we recommend you use only the following data files:
+### Requirements
 
-* imdb.title.basics
-* imdb.title.ratings
-* bom.movie_gross
+1.Import the required libraries:
 
-## Deliverables
+We shall import several Python libraries to aid in performing the task. Pandas and Numpy for data inspection, exploration, and management; Matplolib and seasbon for creation of visualisations
+
+2.Explore Data and Perform Data Cleaning
+
+We shall attempt to clean data as much as possible in order to generate precise output and avoid errors as well as make it posssible to create visualisation.
+
+The cleaned data shall be used to answer the business questions listed.
+
+## INTRODUTION 
+•	project is aimed at performing an analysis for Microsoft
+•	Review of data with aim to advise the company as it venture into movie production.
+•	The analysis explores data provided to advise on types of Movies to invest in 
+•	Analysis pays emphasis on data that have relationship to movie genres
+•	Answers and recommendations focused around "types of films“
+•	The recommendation puts three factors into consideration; Popularity, Profitability  and Cost of production
+
+
+
+## OBSERVATIONS
+### MOST POPULAR MOVIES
 
 There are three deliverables for this project:
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
+•	Documentaries had the highest population in the dataset. 
+•	It is inferred that they are the most popular genre
+•	A close second place was take by drama (24,014)
+•	Third place was take by comedies’
+•	Others in the top ten favorites  included  Thriller, Horror, Action, Romance, Biography Crime and Adventure
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
 
-### Key Points
 
-* **Your analysis should yield three concrete business recommendations.** The ultimate purpose of exploratory analysis is not just to learn about the data, but to help an organization perform better. Explicitly relate your findings to business needs by recommending actions that you think the business (Microsoft) should take.
+![Alt text](Popular_movie_genres.png)
 
-* **Communicating about your work well is extremely important.** Your ability to provide value to an organization - or to land a job there - is directly reliant on your ability to communicate with them about what you have done and why it is valuable. Create a storyline your audience (the head of Microsoft's new movie studio) can follow by walking them through the steps of your process, highlighting the most important points and skipping over the rest.
 
-* **Use plenty of visualizations.** Visualizations are invaluable for exploring your data and making your findings accessible to a non-technical audience. Spotlight visuals in your presentation, but only ones that relate directly to your recommendations. Simple visuals are usually best (e.g. bar charts and line graphs), and don't forget to format them well (e.g. labels, titles).
+### POPULARITY BY RATING
 
-## Getting Started
+•	DRAMAS HAVE THE HIGHEST RATINGS 
+•	It is DEDUCED  that they are the most popular genre
+•	A close second place was taken by COMEDY
+•	other top ten favorites  include Adventure, animation and action
 
-Please start by reviewing this assignment, the rubric at the bottom of it, and the "Project Submission & Review" page. If you have any questions, please ask your instructor ASAP.
 
-Next, we recommend you check out [the Phase 1 Project Templates and Examples repo](https://github.com/learn-co-curriculum/dsc-project-template) and use the MVP template for your project.
+![Alt text](Top_Rated_Genres.png)
 
-Alternatively, you can fork [the Phase 1 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-1-project), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
 
-## Project Submission and Review
+### MOST profitable movies genres to make  
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
+•	A blend of Horror/mystery/thrillers had the highest the highest percentage profit
+•	this category had Percentage Profits up to 90,000 per cent. 
+•	Dramas and documentaries/biographies came in second and third respectively 
+•	The two categories were profitable with percentage profits in the upwards of 30,000. 
+•	Horror as a category of their own came in fifth, indicating that horrors are a top earner. 
+•	Similarly, drama appeared again at 6th category indicating it is lucrative 
 
-## Summary
+![Alt text](<Most_Profitable_Movie Genres.png>)
 
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+### Production cost vs percentage profit  
+
+•	Data showed most profitable genres compared to the most expensive to produce
+•	Horror/mystery/thrillers category is missing amongst the high production cost category 
+•	Drama feature in both but in relatively low numbers 
+•	Dramas are a safe bet medium cost and medium returns 
+•	adventure/animation/comedy had both high returns but also had high production cost
+•	Action movies have high production cost with feasible percentage profits 
+
+
+![Alt text](Cost_VS_Pct_Profit.png)
+
+
+
+![Alt text](Top10_earners.png)
+
+## Recommendations
+
+1.	THE company should prioritize production of drama movies
+    •	Amongst most popular genre
+    •	Have low cost of production
+    •	Have relatively high returns on investment
+
+2.	TOP Genres to invest in include adventure/animation/comedy. Despite the high production cost they had some of the highest returns and were as well popular. 
+
+3.	For diversity, the company could invest in action, adventure, comedies, documentaries and romance 
+
